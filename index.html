@@ -5,14 +5,58 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Git & GitHub</title>
+
+  <style>
+    * {
+      font-family: Arial, Helvetica, sans-serif
+    }
+
+    body {
+      padding-left: 10px;
+    }
+  </style>
 </head>
 
 <body>
   <h1>Git & GitHub</h1>
-  <p>Meu primeiro git pull feito ao adicionar o README.md no repositório do GitHub</p>
+  <p>Guia para auxiliar no estudo de <a href="https://git-scm.com/" target="_blank">git</a> e <a href="https://github.com/" target="_blank">gibhub</a></p>
+  <hr>
+  <section>
+    <h2>Comandos Básicos Git</h2>
+    <ul>
+      <li>
+        <p>Verificar se houve mudança no projeto</p>
+        <code>git status</code>
+      </li>
+      <li>
+        <p>Altera o status do projeto para serem "commitados"</p>
+        <code>git add .</code>
+      </li>
+      <li>
+        <p>Para "commitar" as alterações</p>
+        <code>git commit -m "informação da alteração"</code>
+      </li>
+      <li>
+        <p>Para evitar as alterações para o repositório em nuvem</p>
+        <code>git push origin (nome-branch)</code>
+      </li>
+    </ul>
+  </section>
 
-  <p>Branch support</p>
-  <p>Merge Completed</p>
+
+  <hr>
+  <h3>Branch support</h3>
+  <p>Comando para adicionar uma branch:</p>
+  <code>
+    git checkout (nome-branch)
+  </code>
+  <p>Comando para adicionar uma branch e mudar para a nova branch</p>
+  <code>
+    git checkout -b (nome-branch)
+  </code>
+
+  <hr>
+  <h3>Merge Completed</h3>
 </body>
 
 </html>
