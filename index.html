@@ -24,33 +24,41 @@
   <p>Guia para auxiliar no estudo de <a href="https://git-scm.com/" target="_blank">Git</a> e <a href="https://github.com/" target="_blank">GitHub</a></p>
   <hr>
   <section>
-    <h2>Comandos Básicos Iniciais Git & GitHub</h2>
+    <h2>Comandos Básicos Git</h2>
     <ul>
       <li>
-        <p>Comando para iniciar o git</p>
+        <p>Para iniciar o git no projeto:</p>
         <code>git init</code>
       </li>
       <li>
-        <p>Verificar se houve mudança no projeto</p>
+        <p>Para verificar o status do projeto, modificações e adição de arquivos:</p>
         <code>git status</code>
       </li>
       <li>
-        <p>Altera o status do projeto para serem "commitados"</p>
+        <p>Para preparar o arquivo para o commit: </p>
+        <code>git add (nome-arquivo)</code>
+        <p>Caso seja adicionado mais de um arquivo:</p>
         <code>git add .</code>
       </li>
       <li>
-        <p>Para "commitar" as alterações</p>
-        <code>git commit -m "informação da alteração"</code>
-      </li>
-      <li>
-        <p>Para evitar as alterações para o repositório em nuvem</p>
-        <code>git push origin (nome-branch)</code>
+        <p>Para realizar o commit e salvar as alterações: </p>
+        <code>git commit -m "informação do arquivo adicionado"</code>
+        <p>Caso a alteração seja realizado dentro do arquivo </p>
+        <code>git commit -a -m "informação da alteração realizado no arquivo"</code>
       </li>
     </ul>
   </section>
 
   <hr>
+  <section>
+    <h2>Comandos </h2>
+    <li>
+      <p>Para evitar as alterações para o repositório em nuvem</p>
+      <code>git push origin (nome-branch)</code>
+    </li>
+  </section>
 
+  <hr>
   <h3>Branch support</h3>
   <p>Comando para adicionar uma branch:</p>
   <code>
