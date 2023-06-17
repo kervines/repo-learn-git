@@ -1,0 +1,25 @@
+Comandos git mais utilizados
+
+primeiro comando para iniciar o projeto: git init
+
+evidencia o esta acontendo no repositorio: git status
+
+adiciona as mudanças do projeto: git add .(adiciona todas as mudanças)
+git add (nome do arquivo)
+
+para fazer commit em uma alteração dentro de um arquivo: git commit -a -m "mensagem do commit"
+
+salva cada passo do projeto com uma mensagem para identificar a mudança realizada: git commit -m "mensagem do commit"
+
+comando que mostra todas as mudanças do projeto: git log
+
+cita os branchs do projeto: git branch
+cria uma branch: git branch (nova-branch) 
+
+para trocar de branch: git checkout (nova-branch)
+para criar um branch e trocar para ela: git checkout -b (nova-branch)
+
+para mudanças em outras branch e add as mudanças para a branch principal: git merge (nome-branch-modificada)
+
+
+
