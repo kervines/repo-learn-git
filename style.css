@@ -71,10 +71,13 @@ section.section-01 {
   margin-bottom: 1rem;
 }
 
+section.section-01 .list-items {
+  margin: 1rem;
+}
+
 section h2 {
   text-align: center;
 }
-
 
 li.list-items {
   list-style: none;
