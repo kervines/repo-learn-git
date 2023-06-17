@@ -1,6 +1,7 @@
 :root {
   --borders: 0.5rem;
   --bg01: #171f55;
+  --second-color: #facd60;
 }
 
 * {
@@ -40,7 +41,7 @@ header > p {
 
 header a {
   text-decoration: none;
-  color: #facd60
+  color: var(--second-color);
 }
 
 a:hover {
