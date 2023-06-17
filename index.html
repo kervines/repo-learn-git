@@ -16,10 +16,45 @@
       background-color: #171c38;
       color: #eee;
     }
+
+    .color-mode {
+      width: 50px;
+      height: 30px;
+      background-color: aliceblue;
+      border-radius: 50px;
+
+
+    }
+
+    .color-mode .point {
+      width: 28px;
+      height: 28px;
+      background-color: #171c38;
+      border-radius: 50px;
+      position: relative;
+
+      left: 1px;
+      top: 1px;
+
+      transition: all 0.2s;
+
+    }
+
+    .color-mode .point:hover {
+      cursor: pointer;
+    }
+
+    .color-mode .active {
+      margin: 0 20px;
+    }
   </style>
 </head>
 
 <body>
+  <div class="color-mode">
+    <div class="point"></div>
+
+  </div>
   <header class="header">
     <h1>Git & GitHub</h1>
     <p>Guia para auxiliar no estudo de <a href="https://git-scm.com/" target="_blank">Git</a> e <a href="https://github.com/" target="_blank">GitHub</a></p>
@@ -80,5 +115,14 @@
     </section>
   </main>
 </body>
+
+<script>
+  const colorMode = document.querySelector(".color-mode")
+  const point = document.querySelector(".point")
+  colorMode.addEventListener('click', () => {
+    point.classList.toggle('active')
+  })
+
+</script>
 
 </html>
