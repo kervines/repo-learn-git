@@ -15,21 +15,45 @@
       padding: 10px;
       background-color: #171c38;
       color: #eee;
+
+      transition: all 0.2s;
+    }
+
+    .dark-mode {
+      background-color: #eee;
+      color: #171c38;
     }
 
     .color-mode {
       width: 50px;
       height: 30px;
-      background-color: aliceblue;
+      background-color: #eee;
       border-radius: 50px;
 
-
+      box-shadow: 0 1px 5px 0.5px #171c38;
     }
+
+    /* .color-mode .img {
+
+      background: #171c38 url('./assets/img/moon.svg') no-repeat center;
+      /* background-image: ;
+      background-repeat: ;
+      background-position: ;
+      background-size: 16px; 
+
+      position: absolute;
+    } */
 
     .color-mode .point {
       width: 28px;
       height: 28px;
       background-color: #171c38;
+      background-image: url('./assets/img/moon.svg');
+
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 16px;
+
       border-radius: 50px;
       position: relative;
 
@@ -46,15 +70,18 @@
 
     .color-mode .active {
       margin: 0 20px;
+      background-image: url('./assets/img/sun.svg');
     }
   </style>
 </head>
 
-<body>
+<body class="dark-mode">
+  <!-- dark-mode -->
   <div class="color-mode">
+    <div class="img"></div>
     <div class="point"></div>
-
   </div>
+
   <header class="header">
     <h1>Git & GitHub</h1>
     <p>Guia para auxiliar no estudo de <a href="https://git-scm.com/" target="_blank">Git</a> e <a href="https://github.com/" target="_blank">GitHub</a></p>
@@ -117,10 +144,12 @@
 </body>
 
 <script>
+  const bodyColor = document.querySelector('.dark-mode')
   const colorMode = document.querySelector(".color-mode")
   const point = document.querySelector(".point")
   colorMode.addEventListener('click', () => {
     point.classList.toggle('active')
+    bodyColor.classList.toggle('dark-mode')
   })
 
 </script>
