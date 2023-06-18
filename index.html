@@ -11,73 +11,94 @@
 
 <body>
   <!-- Header -->
-  <header class="header">
+  <header class="header-main">
     <h1>Git & GitHub</h1>
     <p>Guia para auxiliar no estudo de <a href="https://git-scm.com/" target="_blank">Git</a> e <a href="https://github.com/" target="_blank">GitHub</a></p>
   </header>
 
-  <hr>
+  <!-- <hr> -->
 
   <main class="main-content">
 
-    <section class="section-01">
+    <section class="section-content">
       <h2>Comandos Básicos Git</h2>
+      
       <ul class="list">
 
         <li class="list-items">
-          <p>Para iniciar o git no projeto:</p>
-          <code>git init</code>
+          <p>Iniciando um repositório:</p>
+          <code class="git-command">git init</code>
         </li>
 
         <li class="list-items">
           <p>Para verificar o status do projeto, modificações e adição de arquivos:</p>
-          <code>git status</code>
+          <code class="git-command">git status</code>
         </li>
 
         <li class="list-items">
           <p>Para preparar o arquivo para o commit: </p>
-          <code>git add (nome-arquivo)</code>
+          <code class="git-command">git add &lt;nome-arquivo&gt;</code>
+        </li>
+
+        <li class="list-items">
           <p>Caso seja adicionado mais de um arquivo:</p>
-          <code>git add .</code>
+          <code class="git-command">git add .</code>
         </li>
         
         <li class="list-items">
           <p>Para realizar o commit e salvar as alterações: </p>
-          <code>git commit -m "informação do arquivo adicionado"</code>
-          <p>Caso a alteração seja realizado dentro do arquivo </p>
-          <code>git commit -a -m "informação da alteração realizado no arquivo"</code>
+          <code class="git-command">git commit -m "informação do arquivo adicionado"</code>
+        </li>
+        
+        <li class="list-items">
+          <p>Caso a alteração seja realizado dentro do arquivo: </p>
+          <code class="git-command">git commit -a -m "mensagem"</code>
         </li>
         
       </ul>
     </section>
 
-    <hr>
 
-    <section>
-      <h2>Comandos Git e GitHub</h2>
-      <p>Trabalhando com repositório em nuvem</p>
-      <ul>
-        <li>
-          <p>Para evitar as alterações para o repositório em nuvem</p>
-          <code>git push origin (nome-branch)</code>
+    <section class="section-content">
+
+      <header class="header secondary-header">
+        <h2>Comandos Git e GitHub</h2>
+        <p>Trabalhando com repositório em nuvem</p>
+      </header>
+
+      <ul class="list">
+        <li class="list-items">
+          <p>Para evitar as alterações para o repositório em nuvem:</p>
+          <code class="git-command">git push origin &lt;nome-branch&gt;</code>
         </li>
       </ul>
+
     </section>
     
-    <section>
-      <hr>
-      <h3>Branch support</h3>
-      <p>Comando para adicionar uma branch:</p>
-      <code>
-        git checkout (nome-branch)
-      </code>
-      <p>Comando para adicionar uma branch e mudar para a nova branch</p>
-      <code>
-        git checkout -b (nome-branch)
-      </code>
-      <hr>
-      <h3>Merge Completed</h3>
-    </section>
+
+    <section class="section-content">
+
+      <header class="header secondary-header">
+        <h2>Branch support</h2>
+      </header>
+
+      <ul class="list">
+        <li class="list-items">
+          <p>Comando para adicionar uma branch:</p>
+          <code class="git-command">
+            git checkout &lt;nome-branch&gt;
+          </code>
+        </li>
+
+        <li class="list-items">
+          <p>Comando para adicionar uma branch e mudar para a nova branch</p>
+          <code class="git-command">
+            git checkout -b &lt;nome-branch&gt;
+          </code>
+        </li>
+
+      </ul>  
+      </section>
   </main>
 
   

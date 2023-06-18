@@ -1,8 +1,11 @@
 :root {
   --borders: 0.5rem;
+  --bg: #171c38;
   --bg01: #171f55;
-  --second-color: #facd60;
+  --accent: #facd60;
   --section-margin-pattern: 1rem auto 1rem auto;
+  --padding-list: 1.5rem;  
+  --code-color: #ccffcc;
 }
 
 * {
@@ -19,30 +22,31 @@ html {
 }
 
 body {
-  background-color: #171c38;
+  background-color: var(--bg);
   color: #eee;
   font-size: 1.8rem;
 }
 
-header.header {
+header.header-main {
   width: 90%;
   margin: 0 auto;
   text-align: center;
   background-color: var(--bg01);
   border-radius: var(--borders);
+  border-bottom: .3rem solid #efe;
 }
 
-header > h1 {
+header.header-main > h1 {
   margin: 1rem auto
 }
 
-header > p {
+header.header-main > p {
   margin: 1rem;
 }
 
-header a {
+header.header-main a {
   text-decoration: none;
-  color: var(--second-color);
+  color: var(--accent);
 }
 
 a:hover {
@@ -52,7 +56,7 @@ a:hover {
 a:active {
   opacity: .55;
 }
-
+/* 
 hr {
   border: .3rem solid #efe;
   border-left: 0;
@@ -60,25 +64,50 @@ hr {
   width: 90%;
   margin: 0 auto;
   border-radius: var(--borders);
-}
+} */
 
-section.section-01 {
+section.section-content {
   background-color: var(--bg01);
   border-radius: var(--borders);
   margin: var(--section-margin-pattern);
   width: 90%;
   margin-top: 1rem;
   margin-bottom: 1rem;
+  border-bottom: .3rem solid #efe;
 }
 
-section.section-01 .list-items {
+section.section-content .list-items {
   margin: 1rem;
+}
+
+.secondary-header {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.secondary-header p {
+  margin: 0 auto;
+  text-align: center;
+  font-style: italic;
 }
 
 section h2 {
   text-align: center;
 }
 
+ul.list {
+  padding-left: var(--padding-list)
+}
+
 li.list-items {
-  list-style: none;
+  list-style-type: "\2023";
+  padding-inline-start: .5rem; 
+} 
+
+
+code.git-command {
+  display: inline-block;
+  text-indent: 5rem;
+  margin: 1rem auto;
+  color: var(--code-color);
 }
